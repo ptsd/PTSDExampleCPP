@@ -1,0 +1,72 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "PTSDExampleCPP",
+	"Description": "",
+	"Category": "Modding",
+	"CreatedBy": "PTSD",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "PTSDExampleCPP",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "SML",
+			"SemVersion": "^3.1.0",
+			"Enabled": true,
+			"bIsOptional": false
+		},
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true,
+			"bIsBasePlugin": true
+		},
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true,
+			"bIsBasePlugin": true
+		},
+		{
+			"Name": "OnlineSubsystemNull",
+			"Enabled": true,
+			"bIsBasePlugin": true
+		},
+		{
+			"Name": "SignificanceManager",
+			"Enabled": true,
+			"bIsBasePlugin": true
+		},
+		{
+			"Name": "PhysXVehicles",
+			"Enabled": true,
+			"bIsBasePlugin": true
+		},
+		{
+			"Name": "ApexDestruction",
+			"Enabled": true,
+			"bIsBasePlugin": true
+		},
+		{
+			"Name": "Wwise",
+			"Enabled": true,
+			"bIsBasePlugin": true
+		},
+		{
+			"Name": "ReplicationGraph",
+			"Enabled": true,
+			"bIsBasePlugin": true
+		}
+	]
+}
