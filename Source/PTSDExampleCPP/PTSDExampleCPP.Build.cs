@@ -4,47 +4,51 @@ using System;
 
 public class PTSDExampleCPP : ModuleRules
 {
-    public PTSDExampleCPP(ReadOnlyTargetRules Target) : base(Target)
-    {
-        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+	public PTSDExampleCPP(ReadOnlyTargetRules Target) : base(Target)
+	{
+		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] {
-            "Core",
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core",
 			"CoreUObject",
-            "Engine",
-            "InputCore",
-            "OnlineSubsystem",
+			"Engine",
+			"InputCore",
+			"OnlineSubsystem",
 			"OnlineSubsystemUtils",
 			"OnlineSubsystemNULL",
-            "SignificanceManager",
-            "PhysX",
+			"SignificanceManager",
+			"PhysX",
 			"APEX",
 			"PhysXVehicles",
 			"ApexDestruction",
-            "AkAudio",
-            "ReplicationGraph",
-            "UMG",
-            "AIModule",
-            "NavigationSystem",
-            "AssetRegistry",
-            "GameplayTasks",
-            "AnimGraphRuntime",
-            "Slate",
+			"AkAudio",
+			"ReplicationGraph",
+			"UMG",
+			"AIModule",
+			"NavigationSystem",
+			"AssetRegistry",
+			"GameplayTasks",
+			"AnimGraphRuntime",
+			"Slate",
 			"SlateCore",
-            "Json",
-            "HTTP",
-        });
+			"Json",
+			"HTTP",
+		});
 
-        if (Target.Type == TargetRules.TargetType.Editor) {
-			PublicDependencyModuleNames.AddRange(new string[] {
+		if (Target.Type == TargetRules.TargetType.Editor)
+		{
+			PublicDependencyModuleNames.AddRange(new string[]
+			{
 				"OnlineBlueprintSupport",
 				"AnimGraph"
 			});
 		}
 
-        PublicDependencyModuleNames.AddRange(new string[] {
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
 			"FactoryGame",
 			"SML",
 		});
-    }
+	}
 }
